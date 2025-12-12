@@ -71,6 +71,18 @@ export class Bebidas {
             case 7:
                 tipo = "Drinks";
                 break;
+            case 8:
+                tipo = "Artesanal";
+                break;
+            case 9:
+                tipo = "Industrializada";
+                break;
+            case 10:
+                tipo = "Com glútem";
+                break;
+            case 11:
+                tipo = "Sem glútem";
+                break;
         }
 
         console.log("\n\n*****************************************************************")

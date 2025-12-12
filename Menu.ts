@@ -1,5 +1,6 @@
 import readlinesync = require("readline-sync");
 import {Bebidas} from './src/model/Bebidas';
+import { Cervejas } from "./src/model/Cervejas";
 export function main() {
     
     let opcao: number;
@@ -8,6 +9,14 @@ export function main() {
     estoque.visualizar();
     estoque.retirar(20);
     estoque.acrescentar(15);
+
+    const cervejas: Cervejas = new Cervejas(2, true, 6, 7, 520)
+    cervejas.id();
+    cervejas.alcoolica();
+    cervejas.tipo();
+    cervejas.quantidade();
+    cervejas.tamanho();
+
 
 
     while (true) {
